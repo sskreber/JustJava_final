@@ -10,17 +10,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:paddingBottom="16dp"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingTop="16dp"
+        android:paddingLeft="@dimen/paddingM"
+        android:paddingRight="@dimen/paddingM"
+        android:paddingTop="@dimen/paddingM"
         tools:context="com.example.android.justjava.MainActivity">
 
         <EditText
             android:id="@+id/name_box"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/paddingM"
             android:hint="@string/name"
             android:inputType="textCapWords">
             <requestFocus />
@@ -29,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
+            android:layout_marginBottom="@dimen/paddingM"
             android:text="@string/toppings"
             android:textAllCaps="true" />
 
@@ -37,10 +36,10 @@
             android:id="@+id/whipped_cream_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
+            android:paddingLeft="@dimen/paddingL"
             android:text="@string/whipped_cream"
             android:textAllCaps="true"
-            android:textSize="16sp"
+            android:textSize="@dimen/textSizeM"
             style="@style/secondaryTextStyle">
         </CheckBox>
 
@@ -49,18 +48,18 @@
             android:id="@+id/chocolate_checkbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingLeft="24dp"
+            android:paddingLeft="@dimen/paddingL"
             android:text="@string/chocolate"
             android:textAllCaps="true"
-            android:textSize="16sp"
+            android:textSize="@dimen/textSizeM"
             style="@style/secondaryTextStyle">
         </CheckBox>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="@dimen/textSizeM"
+            android:layout_marginTop="@dimen/paddingM"
             android:text="@string/quantity_word"
             android:textAllCaps="true" />
 
@@ -70,8 +69,8 @@
             android:orientation="horizontal">
 
             <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/paddingXL"
+                android:layout_height="@dimen/paddingXL"
                 android:onClick="decrement"
                 android:text="@string/minus"
                 style="@style/buttonStyle"/>
@@ -80,16 +79,16 @@
                 android:id="@+id/quantity_text_view"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:paddingLeft="8dp"
-                android:paddingRight="8dp"
+                android:paddingLeft="@dimen/paddingS"
+                android:paddingRight="@dimen/paddingS"
                 android:text="@string/value"
-                android:textSize="16sp"
+                android:textSize="@dimen/textSizeM"
                 style="@style/secondaryTextStyle">
             </TextView>
 
             <Button
-                android:layout_width="48dp"
-                android:layout_height="48dp"
+                android:layout_width="@dimen/paddingXL"
+                android:layout_height="@dimen/paddingXL"
                 android:onClick="increment"
                 android:text="@string/plus"
                 style="@style/buttonStyle"/>
@@ -115,7 +114,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/paddingM"
             android:onClick="submitOrder"
             android:text="@string/button_title"
             style="@style/buttonStyle"/>
